@@ -6,7 +6,7 @@ buildscript {
         mavenLocal()
         maven { url "https://repo.grails.org/grails/core" }
     }
-    dependencies {        
+    dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0'
         classpath "org.grails.plugins:hibernate:4.3.10.5"
@@ -23,8 +23,6 @@ group "basegrailsapp"
 apply plugin: "spring-boot"
 apply plugin: "war"
 apply plugin: "asset-pipeline"
-apply plugin: 'eclipse'
-apply plugin: 'idea'
 apply plugin: "org.grails.grails-web"
 apply plugin: "org.grails.grails-gsp"
 
