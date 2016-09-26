@@ -70,6 +70,10 @@ dependencies {
     testRuntime 'org.seleniumhq.selenium:selenium-htmlunit-driver:2.44.0'
 
     console "org.grails:grails-console"
+
+    //plugins aggregates
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.39'
+
 }
 
 task wrapper(type: Wrapper) {
