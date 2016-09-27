@@ -10,6 +10,7 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0'
         classpath "org.grails.plugins:hibernate:4.3.10.5"
+        classpath 'org.grails.plugins:database-migration:2.0.0.RC4'
     }
 }
 
@@ -74,9 +75,17 @@ dependencies {
     //plugins aggregates
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.39'
     compile 'org.grails.plugins:spring-security-core:3.1.1'
-
+    runtime 'org.grails.plugins:database-migration:2.0.0.RC4'
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
+}
+
+sourceSets {
+  main {
+    resources {
+      srcDir 'grails-app/migrations'
+    }
+  }
 }
