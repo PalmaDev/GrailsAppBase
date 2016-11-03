@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: basegrailsapp
+        defaultPackage: siscaim
 info:
     app:
         name: '@info.app.name@'

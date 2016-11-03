@@ -1,9 +1,9 @@
 
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.baseapp.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.baseapp.UserRole'
-grails.plugin.springsecurity.authority.className = 'com.baseapp.Role'
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.siscaim.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.siscaim.UserRole'
+grails.plugin.springsecurity.authority.className = 'com.siscaim.Role'
 
 grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.password.algorithm = 'SHA-256'

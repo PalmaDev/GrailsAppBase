@@ -10,8 +10,8 @@ import org.springframework.core.env.MapPropertySource
 class Application extends GrailsAutoConfiguration implements EnvironmentAware {
 
   //TODO: indicar el nombre de la carpeta donde esta el file de prop, y el nombre del file de properties
-  final String folderProperties = ".folderProperties"
-  final String nameFileProperties = "fileProperties"
+  final String folderProperties = ".siscaimv2"
+  final String nameFileProperties = "siscaimProperties"
 
     static void main(String[] args) {
         GrailsApp.run(Application, args)
