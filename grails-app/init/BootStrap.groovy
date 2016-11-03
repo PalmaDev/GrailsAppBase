@@ -1,6 +1,6 @@
-import com.baseapp.Role
-import com.baseapp.User
-import com.baseapp.UserRole
+import com.siscaim.Role
+import com.siscaim.User
+import com.siscaim.UserRole
 
 class BootStrap {
 

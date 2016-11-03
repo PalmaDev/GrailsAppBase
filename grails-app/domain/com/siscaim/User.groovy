@@ -1,4 +1,4 @@
-package com.baseapp
+package com.siscaim
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString

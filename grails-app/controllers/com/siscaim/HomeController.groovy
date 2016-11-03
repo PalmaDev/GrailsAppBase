@@ -1,4 +1,4 @@
-package com.app
+package com.siscaim
 
 class HomeController {
   def index() { }

@@ -1,4 +1,4 @@
-package com.baseapp
+package com.siscaim
 
 import grails.gorm.DetachedCriteria
 import groovy.transform.ToString
