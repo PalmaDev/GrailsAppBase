@@ -7,20 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <asset:stylesheet src="application.css"/>
         <asset:javascript src="application.js"/>
-
+        <style>
+          body {
+            background-color: #AAD9C0;
+          }
+        </style>
         <g:layoutHead/>
     </head>
     <body>
         <div class="navbar-wrapper">
           <div class="container">
-
             <nav class="navbar navbar-inverse navbar-static-top">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <g:link class="navbar-brand" controller="home">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                   </g:link>
-                  <p class="navbar-text"><asset:image src="home/marba.png" absolute="true" height="50"/></p>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav">
@@ -28,15 +30,21 @@
                   </ul>
                   <ul class="nav navbar-nav navbar-right">
                     <li><p class="navbar-text">SISCAIM v2.0</p></li>
+                    <sec:ifLoggedIn>
+                    <li>
+                      <g:link controller="logout" action="index">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                      </g:link>
+                    </li>
+                    </sec:ifLoggedIn>
                   </ul>
                 </div>
               </div>
             </nav>
-
+            <g:layoutBody/>
           </div>
         </div>
 
-        <g:layoutBody/>
         <div class="footer" role="contentinfo"></div>
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
     </body>
