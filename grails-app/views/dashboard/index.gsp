@@ -5,8 +5,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="text-center">
-        <h1>BIENVENIDO <small><sec:username/></small></h1>
+      <div>
+        <h3>BIENVENIDO <small><sec:username/></small></h3>
       </div>
     </div>
   </body>
