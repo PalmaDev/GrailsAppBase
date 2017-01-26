@@ -10,3 +10,27 @@ build/
 .settings
 .classpath
 .asscache
+grails-app/assets/javascripts/third-party/node_modules/
+grails-app/assets/javascripts/third-party/
+node_modules/
+logs/
+**.swp
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+
+# project release file
+/*.war
+
