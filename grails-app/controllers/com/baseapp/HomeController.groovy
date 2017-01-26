@@ -1,4 +1,4 @@
-package com.app
+package com.baseapp
 
 class HomeController {
   def index() { }
