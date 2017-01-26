@@ -27,6 +27,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><p class="navbar-text">baseAppGrails v1.0</p></li>
+                  <sec:ifLoggedIn>
+                  <li>
+                    <g:link controller="logout" action="index">
+                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    </g:link>
+                  </li>
+                  </sec:ifLoggedIn>
                 </ul>
               </div>
             </div>
