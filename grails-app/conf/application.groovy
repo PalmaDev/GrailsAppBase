@@ -8,6 +8,7 @@ grails.plugin.springsecurity.authority.className = 'com.baseapp.Role'
 grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.password.algorithm = 'SHA-256'
 
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/dashboard'
 grails.plugin.springsecurity.securityConfigType = "InterceptUrlMap"
 
 grails.plugin.springsecurity.interceptUrlMap = [
@@ -24,7 +25,8 @@ grails.plugin.springsecurity.interceptUrlMap = [
 [pattern: '/login',           access: ['permitAll']],
 [pattern: '/login/**',        access: ['permitAll']],
 [pattern: '/logout',          access: ['IS_AUTHENTICATED_FULLY']],
-[pattern: '/logout/**',       access: ['IS_AUTHENTICATED_FULLY']]
+[pattern: '/logout/**',       access: ['IS_AUTHENTICATED_FULLY']],
+[pattern: '/dashboard/**',       access: ['IS_AUTHENTICATED_FULLY']]
 ]
 
 
