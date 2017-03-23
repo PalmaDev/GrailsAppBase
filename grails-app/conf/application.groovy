@@ -30,7 +30,8 @@ grails.plugin.springsecurity.interceptUrlMap = [
 [pattern: '/login/**',        access: ['permitAll']],
 [pattern: '/logout',          access: ['IS_AUTHENTICATED_FULLY']],
 [pattern: '/logout/**',       access: ['IS_AUTHENTICATED_FULLY']],
-[pattern: '/dashboard/**',       access: ['IS_AUTHENTICATED_FULLY']]
+[pattern: '/dashboard/**',       access: ['IS_AUTHENTICATED_FULLY']],
+[pattern: '/user/**',       access: ['IS_AUTHENTICATED_FULLY']]
 ]
 
 
