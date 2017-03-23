@@ -24,6 +24,22 @@
               <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                   <li><p class="navbar-text">Base Aplication</p></li>
+
+                  <sec:ifAnyGranted roles="SUPER_USER">
+                  <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      Administración <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <g:link controller="user" action="createUserAdmin">
+                          Crear Usuario Administrador
+                        </g:link>
+                      </li>
+                    </ul>
+                  </li>
+                  </sec:ifAnyGranted>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><p class="navbar-text">baseAppGrails v1.0</p></li>
@@ -41,7 +57,19 @@
 
         </div>
       </div>
-        <g:layoutBody/>
+
+      <div id="page-wrapper">
+        <div class="page-content page-content-ease-in">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+              <g:layoutBody/>
+            </div>
+            <div class="col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+
         <div class="footer" role="contentinfo"></div>
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
     </body>
