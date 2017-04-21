@@ -17,11 +17,7 @@ class BootStrap {
       }
 
       new Role(authority:'ADMIN').save()
-
-      assert User.count() == 1
-      assert Role.count() == 2
-      assert UserRole.count() == 1
-    }
+   }
 
     def destroy = {
     }
