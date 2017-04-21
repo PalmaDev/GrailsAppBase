@@ -36,6 +36,11 @@
                           Crear Usuario Administrador
                         </g:link>
                       </li>
+                      <li>
+                        <g:link controller="user" action="list">
+                          Lista de Usuarios
+                        </g:link>
+                      </li>
                     </ul>
                   </li>
                   </sec:ifAnyGranted>
