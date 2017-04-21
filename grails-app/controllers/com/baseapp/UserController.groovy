@@ -27,7 +27,7 @@ class UserController {
   }
 
   def list() {
-    params.max = 3
+    params.max = 20
     [users:User.list(params), usersCount:User.count()]
   }
 }
