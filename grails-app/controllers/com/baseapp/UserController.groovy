@@ -14,7 +14,7 @@ class UserController {
   }
 
   @Transactional
-  def saveWithRole(UserCommand userCommand) {
+  def saveWithRole(UserWithRoleCommand userCommand) {
     if (userCommand.hasErrors()) {
       transactionStatus.setRollbackOnly()
       render view:"createWithRole", model:[user:userCommand]
