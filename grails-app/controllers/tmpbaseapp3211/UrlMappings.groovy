@@ -1,3 +1,5 @@
+package tmpbaseapp3211
+
 class UrlMappings {
 
     static mappings = {
