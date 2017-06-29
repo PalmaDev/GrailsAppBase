@@ -98,3 +98,7 @@ sourceSets {
     }
   }
 }
+
+task stage {
+  dependsOn installDist
+}
