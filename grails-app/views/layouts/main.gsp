@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <asset:stylesheet src="application.css"/>
         <asset:javascript src="application.js"/>
-
+        <script src="https://use.fontawesome.com/2d134e7eae.js"></script>
         <g:layoutHead/>
     </head>
     <body>
@@ -48,10 +48,15 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><p class="navbar-text">baseAppGrails v1.0</p></li>
+                  <sec:ifNotLoggedIn>
+                    <g:link controller="login" action="auth" class="navbar-text" title="Haz clic para ingresar">
+                      <i class="fa fa-sign-in fa-lg"></i>
+                    </g:link>
+                  </sec:ifNotLoggedIn>
                   <sec:ifLoggedIn>
                   <li>
-                    <g:link controller="logout" action="index">
-                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                    <g:link controller="logout" action="index" title="Haz clic para salir">
+                      <i class="fa fa-sign-out fa-lg"></i>
                     </g:link>
                   </li>
                   </sec:ifLoggedIn>
