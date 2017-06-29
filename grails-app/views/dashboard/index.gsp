@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="text-center">
-      <h1>BIENVENIDO</h1>
+      <g:img dir="images" file="welcome.png" class="img-rounded" width="620" height="200"/>
     </div>
   </body>
 </html>
