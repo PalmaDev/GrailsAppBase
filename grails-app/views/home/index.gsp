@@ -5,13 +5,16 @@
   </head>
   <body>
     <div>
-
       <div class="row">
         <div class="text-center">
-          <p><g:link controller="login" action="auth" class="btn btn-primary btn-lg">Ingresa</g:link></p>
+          <label>Aplicación Web de Base</label>
         </div>
       </div>
-
+      <div class="row">
+        <div class="text-center">
+          <g:img dir="images" file="home.png" class="img-rounded" width="300" height="300"/>
+        </div>
+      </div>
     </div>
 
   </body>
