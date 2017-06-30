@@ -1,4 +1,4 @@
-package tmpbaseapp3211
+package baseGrailsApp
 
 class UrlMappings {
 
