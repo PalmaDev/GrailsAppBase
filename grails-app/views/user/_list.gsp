@@ -5,10 +5,10 @@
       <th>Estatus</th>
       <th>Roles</th>
     </tr>
-    <g:each in="${users}" var="user">
+    <g:each in="${usersList}" var="user">
       <tr>
         <td>${user.username}</td>
-        <td>${user.enabled}</td>
+        <td><g:message code="user.status.${user.enabled}"/></td>
         <td>
           <g:each in="${user.getAuthorities()}" var="role">
             ${role.authority}<br/>
@@ -17,9 +17,5 @@
       </tr>
     </g:each>
   </table>
-  <nav>
-    <ul class="pagination">
-      <g:paginate class="pagination" controller="user" action="list" total="${usersCount}" />
-    </ul>
-  </nav>
 </div>
+
