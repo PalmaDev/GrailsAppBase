@@ -4,13 +4,12 @@
     <meta name="layout" content="main">
   </head>
   <body>
-    <div class="container-fluid">
       <div class="page-title">
         <h1>
-          <i class="icon-factura fa-3x"></i>
+          <i class="fa fa-users fa-lg"></i>
           Gestión de Usuarios
-          <small>Lista de Usuarios</small>
         </h1>
+        <h2> <small>Lista de Usuarios</small></h2>
       </div>
 
       <div class="row">
@@ -25,6 +24,5 @@
         </div>
       </div>
       </div>
-    </div>
   </body>
 </html>
