@@ -17,5 +17,10 @@
       </tr>
     </g:each>
   </table>
+  <nav class="text-center">
+    <div class="pagination">
+      <g:paginate class="pagination" controller="user" action="list" total="${usersCount}" />
+    </div>
+  </nav>
 </div>
 
