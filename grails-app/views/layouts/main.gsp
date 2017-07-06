@@ -32,13 +32,8 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li>
-                        <g:link controller="user" action="createUserAdmin">
-                          Crear Usuario Administrador
-                        </g:link>
-                      </li>
-                      <li>
                         <g:link controller="user" action="list">
-                          Lista de Usuarios
+                          Gestión de Usuarios
                         </g:link>
                       </li>
                     </ul>
